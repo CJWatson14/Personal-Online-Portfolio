@@ -8,3 +8,7 @@ h1 {
 body { 
     background-color: black;
 }
+
+nav {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
