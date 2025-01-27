@@ -1,8 +1,13 @@
 
 
-body { 
+body {
     background-image: url("pexels-samandgos-709552.jpg"); 
     background-size: cover;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
 }
 
 nav {
@@ -28,21 +33,42 @@ nav a {
     color: #000000; 
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    text-decoration: none;
 }
 
 nav a:hover,
 nav a.active {
     color: #8f8d8d;
     transform: scale(1.2);
+    border-bottom: 3px solid;
 }
 
+
 article {
-    margin-top: 300px; 
+    margin-top: 80px; 
     padding: 20px; 
     background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 10px; 
     max-width: 800px; 
-    margin-left: auto; 
-    
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  }
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.content-container {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    width: 100%; 
+}
+
+aside {
+    margin-right: 20px; 
+}
+
+article .article-text {
+    max-width: 600px; 
+}
