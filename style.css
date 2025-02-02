@@ -276,3 +276,116 @@ a {
 .aside-pp {
     margin-right: 20px;
 }
+
+/*--------------------------------------------------------------------*/
+
+/* Contact Page Style*/
+
+.content-container-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+}
+
+.article-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: none;
+    border-radius: 10px;
+    max-width: 800px;
+    width: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.3s ease-out;
+}
+
+.article-text-contact {
+    max-width: 600px;
+}
+
+/* Social links hover effect */
+.social-link-contact:hover {
+    color: #8f8d8d;
+    transform: scale(1.2);
+    border-bottom: 3px solid;
+}
+
+/* Styling the Contact Form Section */
+.contact-form-section {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    animation: fadeIn 2s forwards;
+    
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #8f8d8d; /* Matching button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a7a7a; /* Slightly darker when hovering */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .contact-form-section {
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .contact-form-section h2 {
+        font-size: 20px;
+    }
+}
